@@ -2,9 +2,13 @@ const express = require('express');
 
 const connectDatabase = require('./config/database');
 const Pessoa = require('./models/Pessoa');
+const limiter = require('./config/security');
+
 
 const app = express();
 const PORT = 3000;
+
+app.use(limiter);
 
 app.use(express.json());
 
