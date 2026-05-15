@@ -7,7 +7,7 @@ const pessoaSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-    curso: {
+    ra: {
       type: String,
       required: true,
       trim: true,
